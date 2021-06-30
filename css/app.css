@@ -1,5 +1,14 @@
+body {
+    background: #f0f2f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-logo {
+    font-family: 'Audiowide', cursive;
+}
+
 nav .nav-item {
-    background: #eeeeee;
+    background: #ffffff;
     border-radius: 10px;
     margin-right: 10px;
 }
@@ -11,4 +20,44 @@ nav .nav-item .active {
 
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 4px 10px;
+}
+
+.na-btn {
+    list-style: none;
+    padding: 4px 10px;
+    background: #ffffff;
+    border-radius: 10px;
+    margin: 0 10px;
+    min-width: 80px;
+    text-align: center;
+}
+
+.na-btn.active {
+    border: 1px solid #707070;
+}
+
+.na-portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "na-left na-right";
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+}
+
+.na-left { grid-area: na-left; }
+
+.na-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". ."
+    ". .";
+  grid-area: na-right;
 }
