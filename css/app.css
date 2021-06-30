@@ -1,0 +1,14 @@
+nav .nav-item {
+    background: #eeeeee;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+nav .nav-item .active {
+    border: 1px solid #707070;
+    border-radius: 10px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 4px 10px;
+}
